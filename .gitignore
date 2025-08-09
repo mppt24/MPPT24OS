@@ -1,0 +1,16 @@
+# Build / deps
+target/
+node_modules/
+dist/
+build/
+__pycache__/
+*.log
+*.tmp
+
+# IDEs
+.vscode/
+.idea/
+
+# SO
+.DS_Store
+Thumbs.db
