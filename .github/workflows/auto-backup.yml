@@ -1,0 +1,37 @@
+name: Backup to MPPT24OS-Backup-2025-08-09
+
+on:
+  schedule:
+    - cron: '30 * * * *'  # Executa de hora em hora, no minuto 30
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Configurar Git
+        run: |
+          git config --global user.name "mppt24-bot"
+          git config --global user.email "mppt24-bot@users.noreply.github.com"
+
+      - name: Clonar repositório de backup
+        run: |
+          git clone https://github.com/mppt24/MPPT24OS-Backup-2025-08-09.git backup-repo
+
+      - name: Copiar conteúdo
+        run: |
+          rsync -av --delete --exclude ".git" ./ backup-repo/
+
+      - name: Commit e Push no repositório de backup
+        run: |
+          cd backup-repo
+          git add .
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração para backup."
+            exit 0
+          fi
+          git commit -m "Backup automático"
+          git push https://github.com/mppt24/MPPT24OS-Backup-2025-08-09.git main
