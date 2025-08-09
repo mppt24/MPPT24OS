@@ -1,11 +1,14 @@
 # MPPT24OS
 
-Repositório **limpo** (sem binários/pesados) do MPPT24OS/RustLinux.  
-Usa este repo para desenvolvimento e colaboração.
+Sistema Operacional Inteligente Integrado — MPPT24OS  
+Este repositório contém o código-fonte e documentação principal.
 
-## Conteúdo
-- Código-fonte e documentos leves (até 10 MB por ficheiro)
-- Estrutura reproduzida do backup de 2025-08-09
+## Estrutura de Pastas
+- **src/** → Código-fonte principal
+- **docs/** → Documentação
+- **scripts/** → Scripts auxiliares
+- **assets/** → Recursos (imagens, ícones, etc.)
+- **.github/workflows/** → Automação via GitHub Actions
 
-## Repositório de arquivo
-Para os artefactos completos (.zip/.tar.gz) vê **MPPT24OS-Backup-2025-08-09** (release v2025-08-09).
+## Links Relacionados
+- Backup completo: [MPPT24OS-Backup-2025-08-09](https://github.com/mppt24/MPPT24OS-Backup-2025-08-09)

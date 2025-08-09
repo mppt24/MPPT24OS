@@ -1,16 +1,32 @@
-# Build / deps
-target/
+# SO / editor
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / Web
 node_modules/
 dist/
 build/
-__pycache__/
-*.log
-*.tmp
+.cache/
+
+# Rust
+target/
+Cargo.lock
 
 # IDEs
 .vscode/
 .idea/
 
-# SO
-.DS_Store
-Thumbs.db
+# Misc
+*.env
+.env.*
