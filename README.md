@@ -1,29 +1,24 @@
 # MPPT24OS
 
-[Guia de leitura, infográfico e cuidados](GUIA.md)
-
-Ecossistema de projetos em Linux para observar sistemas, gerir serviços domésticos e experimentar IA local. **MPPT24 ESCUDO** é o servidor doméstico de segurança. **MPPT24 CORE** é o motor de observação, validação e decisão técnica.
-
-## MPPT24 ESCUDO
-
-O ESCUDO reúne proteção de rede, serviços privados, monitorização e cópias de segurança. O infográfico mostra o inventário de software e um retrato do conjunto monitorizado em **21 de novembro de 2026**.
-
-[![Infográfico do MPPT24 ESCUDO com Ubuntu Server, Arch Linux e o inventário de software](docs/mppt24-escudo-infografico.png)](docs/mppt24-escudo-infografico.png)
-
-[Ver infográfico em tamanho completo](docs/mppt24-escudo-infografico.png)
+Projetos Linux para proteger uma rede doméstica, acompanhar a saúde de um servidor e experimentar aplicações de IA local.
 
 ## Explorar os projetos
 
 ### Publicado
 
-| Projeto | O que está disponível |
-| --- | --- |
-| [MPPT24OS](https://github.com/mppt24/MPPT24OS) | Portal e documentação pública do ecossistema. |
-| [MPPT24 ESCUDO](#mppt24-escudo) | Infográfico do servidor, com a data da observação indicada acima. |
-| [MPPT24 CORE](https://github.com/mppt24/mppt24-core) | Base operacional validada. A [primeira edição pública](https://github.com/mppt24/mppt24-core/commit/643ba1e856ae91cca32a62a33b329c7d947222da) inclui código-fonte, arquitetura, contratos e testes. |
-| [MPPT24 AGI Absoluta](https://github.com/mppt24/mppt24-agi-absoluta) | Base de chat local validada, com calculadora, conversões e respostas por temas. |
+- **Ver o software do servidor doméstico.** O infográfico do ESCUDO pode ser visto diretamente nesta página. [Ver o MPPT24 ESCUDO](#mppt24-escudo)
+- **Experimentar uma aplicação local.** O AGI Absoluta é um protótipo de chat com calculadora e conversor. O guia indica o que precisas, como abrir a página e o resultado a esperar. [Experimentar o AGI Absoluta](https://github.com/mppt24/mppt24-agi-absoluta#experimentar)
+- **Perceber como se observa um sistema Linux.** O CORE tem código, documentação e testes. O instalador público está em preparação. [Primeiros passos no CORE](https://github.com/mppt24/mppt24-core#primeiros-passos)
 
-Para explorar ou testar o código publicado, começa pelo [README do CORE](https://github.com/mppt24/mppt24-core#readme).
+[Guias dos 16 repositórios públicos](GUIA.md#guias-dos-reposit%C3%B3rios-p%C3%BAblicos) · [Como ler registos e confirmar testes](GUIA.md#como-ler-os-registos)
+
+## MPPT24 ESCUDO
+
+O ESCUDO reúne proteção de rede, serviços privados, monitorização e cópias de segurança. O inventário visual mostra Ubuntu Server, Arch Linux e as famílias de software registadas em **21 de novembro de 2026**. Para aprender a interpretar avisos de rede, estados de serviços e resultados de cópias, consulta os [exemplos de registos do ESCUDO](GUIA.md#como-ler-um-registo-do-escudo).
+
+[![Infográfico do MPPT24 ESCUDO com Ubuntu Server, Arch Linux e o inventário de software](docs/mppt24-escudo-infografico.png)](docs/mppt24-escudo-infografico.png)
+
+[Ver infográfico em tamanho completo](docs/mppt24-escudo-infografico.png)
 
 ### Em evolução
 
@@ -36,7 +31,7 @@ Para explorar ou testar o código publicado, começa pelo [README do CORE](https
 
 ### Em avaliação
 
-O AI Hub é um protótipo para testes locais com modelos de IA. As integrações externas do AGI Absoluta continuam em avaliação.
+O [AI Hub](https://github.com/mppt24/ai-hub-publish#testar-a-api-localmente) é um protótipo. Podes confirmar que o serviço responde localmente. Para experimentar o chat é preciso ligar ao Ollama. As integrações externas do AGI Absoluta continuam em avaliação.
 
 ### Critério de publicação
 
