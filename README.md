@@ -1,3 +1,5 @@
+<div lang="pt-PT">
+
 # MPPT24OS
 
 Projetos Linux para proteger uma rede doméstica, acompanhar a saúde de um servidor e experimentar aplicações de IA local.
@@ -33,7 +35,7 @@ O ESCUDO reúne proteção de rede, serviços privados, monitorização e cópia
 
 [Consultar a lista de software em texto](#software-do-escudo-em-texto)
 
-[![Infográfico do MPPT24 ESCUDO com Ubuntu Server, Arch Linux e o inventário de software](docs/mppt24-escudo-infografico.png)](docs/mppt24-escudo-infografico.png)
+![Infográfico do MPPT24 ESCUDO. Inventário de software de 21 de novembro de 2026, transcrito a seguir.](docs/mppt24-escudo-infografico.png)
 
 [Ver infográfico em tamanho completo](docs/mppt24-escudo-infografico.png)
 
@@ -62,3 +64,5 @@ Num erro, indica o que tentaste fazer, o que esperavas e o que aconteceu. Acresc
 ## Licenças
 
 O MPPT24OS usa [MIT](LICENSE). O MPPT24 CORE usa [AGPL-3.0](https://github.com/mppt24/mppt24-core/blob/main/LICENSE). Os módulos [Configuração do servidor](https://github.com/mppt24/mppt24-server-setup/blob/main/LICENSE) e [Rust no Termux](https://github.com/mppt24/rustlinux-termux-installer/blob/main/LICENSE) usam MIT. O AI Hub ainda não tem um ficheiro de licença publicado.
+
+</div>
