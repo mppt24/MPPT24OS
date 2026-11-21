@@ -12,15 +12,32 @@ O ESCUDO reúne proteção de rede, serviços privados, monitorização e cópia
 
 ## Explorar os projetos
 
-| Projeto | O que encontras | Estado |
-| --- | --- | --- |
-| [MPPT24OS](https://github.com/mppt24/MPPT24OS) | Apresentação do ecossistema e documentação pública do ESCUDO. | Portal do projeto |
-| [MPPT24 CORE](https://github.com/mppt24/mppt24-core) | Código, arquitetura, contratos e testes para observação e decisão em Linux. | Base operacional publicada. Instalação automatizada em preparação. |
-| [AI Hub](https://github.com/mppt24/ai-hub-publish) | Protótipo de uma API para conversar com modelos locais através de Ollama. | Protótipo para teste local |
-| [Configuração do servidor](https://github.com/mppt24/mppt24-server-setup) | Esboços dos scripts de configuração e atualização. | Em preparação |
-| [Rust no Termux](https://github.com/mppt24/rustlinux-termux-installer) | Esboços dos scripts de verificação e instalação. | Em preparação |
+### Publicado
 
-Para explorar o código, começa pelo [README do CORE](https://github.com/mppt24/mppt24-core#readme). Lá encontras os requisitos, a arquitetura e um exemplo de execução dos testes. Para conhecer o ESCUDO, começa pelo infográfico acima.
+| Projeto | O que está disponível |
+| --- | --- |
+| [MPPT24OS](https://github.com/mppt24/MPPT24OS) | Portal e documentação pública do ecossistema. |
+| [MPPT24 ESCUDO](#mppt24-escudo) | Infográfico do servidor, com a data da observação indicada acima. |
+| [MPPT24 CORE](https://github.com/mppt24/mppt24-core) | Base operacional validada. A [primeira edição pública](https://github.com/mppt24/mppt24-core/commit/643ba1e856ae91cca32a62a33b329c7d947222da) inclui código-fonte, arquitetura, contratos e testes. |
+
+Para explorar ou testar o código publicado, começa pelo [README do CORE](https://github.com/mppt24/mppt24-core#readme).
+
+### Em evolução
+
+| Projeto | Trabalho em curso |
+| --- | --- |
+| MPPT24 CORE | Empacotamento e instalador público. |
+| [Configuração do servidor](https://github.com/mppt24/mppt24-server-setup) | Rotinas de configuração e atualização. |
+| [Rust no Termux](https://github.com/mppt24/rustlinux-termux-installer) | Verificação do ambiente e instalador. |
+| [MPPT24 Bootstrap](https://github.com/mppt24/mppt24-bootstrap) | Documentação e preparação do arranque dos componentes. |
+
+### Em avaliação
+
+O AI Hub é um protótipo para testes locais com modelos de IA.
+
+### Critério de publicação
+
+Uma versão entra na lista de entregas publicadas quando está validada e a versão a disponibilizar está identificada. Um projeto com uma base validada pode ter trabalhos em evolução em paralelo. Os ensaios em avaliação só passam a entregas depois de validados. A manutenção destina-se às correções e atualizações de versões já publicadas.
 
 ## Contribuir
 
