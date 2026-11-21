@@ -1,3 +1,5 @@
+<div lang="pt-PT">
+
 # Guia de MPPT24OS
 
 **Estado:** Portal público.
@@ -36,12 +38,10 @@ O [infográfico do ESCUDO](docs/mppt24-escudo-infografico.png) mostra o estado o
 
 Os exemplos abaixo são fictícios. No servidor, confirma sempre a hora, a origem do evento e a operação a que diz respeito.
 
-| Área | O que procurar | Como interpretar |
-| --- | --- | --- |
-| Sistema e serviços | Nome do serviço, resultado e hora | Um serviço parado pode estar inativo por configuração. Uma falha é uma execução que terminou com erro. |
-| Rede e acesso | Tipo de evento e resultado | Uma tentativa recusada deve ser lida junto com a origem e o contexto antes de tirar uma conclusão. |
-| Cópias e recuperação | Resultado da cópia e teste de restauro | Uma cópia concluída e um restauro verificado são provas diferentes. |
-| Monitorização e CORE | Estado e dado que o justificou | `OK` indica que a verificação passou. `WARNING` merece atenção. `ERROR` indica falha na verificação. `UNKNOWN` indica dados insuficientes. |
+- **Sistema e serviços.** Procura o nome do serviço, a hora e o resultado. Um serviço pode estar parado por configuração. Se o arranque falhou, procura o erro dessa execução.
+- **Rede e acesso.** Procura o tipo de evento e o resultado. Para interpretar uma ligação recusada, confirma a origem e o contexto.
+- **Cópias e recuperação.** Procura o resultado da cópia e, separadamente, o registo do teste de restauro.
+- **Monitorização e CORE.** Procura o estado e o dado que o justifica. `OK` indica que a verificação passou. `WARNING` assinala algo que merece atenção. `ERROR` indica que a verificação falhou. `UNKNOWN` indica dados insuficientes.
 
 - **«AVISO · Rede · Dados de conectividade insuficientes».** Confirma se a recolha produziu dados na hora do aviso. Só então dá para avaliar a ligação.
 - **«OK · Cópia concluída».** Confirma que a ferramenta terminou a cópia. Procura um registo separado de restauro para saber o que foi recuperado.
@@ -86,3 +86,5 @@ O [catálogo JSON](docs/guias.json) contém as mesmas ligações num formato que
 ## Resumo visual
 
 [![MPPT24OS. Índice e estado dos projetos. Actions: documentação. Backup exige prova de restauro.](docs/guia-visual.png)](docs/guia-visual.png)
+
+</div>
