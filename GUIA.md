@@ -16,7 +16,7 @@ Em **Actions**, abre «Verificar documentação». Confirma o commit e o resulta
 
 ## Como ler os registos
 
-Em **Actions**, «Verificar cópia e restauro do Git» cria uma cópia temporária do repositório, restaura-a num segundo diretório e compara o commit. O resultado cobre esse ensaio do Git.
+Em **Actions**, a tarefa «Cópia temporária e restauro» do workflow «Verificar documentação» cria uma cópia temporária do repositório, restaura-a num segundo diretório e compara o commit. O resultado cobre esse ensaio do Git.
 
 ### Exemplo fictício
 
