@@ -19,6 +19,7 @@ O ESCUDO reúne proteção de rede, serviços privados, monitorização e cópia
 | [MPPT24OS](https://github.com/mppt24/MPPT24OS) | Portal e documentação pública do ecossistema. |
 | [MPPT24 ESCUDO](#mppt24-escudo) | Infográfico do servidor, com a data da observação indicada acima. |
 | [MPPT24 CORE](https://github.com/mppt24/mppt24-core) | Base operacional validada. A [primeira edição pública](https://github.com/mppt24/mppt24-core/commit/643ba1e856ae91cca32a62a33b329c7d947222da) inclui código-fonte, arquitetura, contratos e testes. |
+| [MPPT24 AGI Absoluta](https://github.com/mppt24/mppt24-agi-absoluta) | Base de chat local validada, com calculadora, conversões e respostas por temas. |
 
 Para explorar ou testar o código publicado, começa pelo [README do CORE](https://github.com/mppt24/mppt24-core#readme).
 
@@ -33,7 +34,7 @@ Para explorar ou testar o código publicado, começa pelo [README do CORE](https
 
 ### Em avaliação
 
-O AI Hub é um protótipo para testes locais com modelos de IA.
+O AI Hub é um protótipo para testes locais com modelos de IA. As integrações externas do AGI Absoluta continuam em avaliação.
 
 ### Critério de publicação
 
