@@ -12,16 +12,17 @@ permissions:
 
 jobs:
   documentacao:
-    name: Ligações e infográfico
+    name: Ligações, imagens e catálogo
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Validar o README e o PNG
+      - name: Validar guias, imagens e catálogo
         run: |
           python3 - <<'PY'
           from pathlib import Path
+          import json
           import re
           import struct
           from urllib.parse import unquote, urlsplit
@@ -30,30 +31,56 @@ jobs:
           readme = root / "README.md"
           errors = []
           
-          for target in re.findall(r"\]\(([^\s)]+)\)", readme.read_text(encoding="utf-8")):
-              url = urlsplit(target)
-              if url.scheme or url.netloc or not url.path:
-                  continue
-              destination = (readme.parent / unquote(url.path)).resolve()
-              if not destination.is_relative_to(root) or not destination.exists():
-                  errors.append(f"Ligação local inválida no README: {target}")
-          
-          image = "docs/mppt24-escudo-infografico.png"
-          markdown = readme.read_text(encoding="utf-8")
-          if not re.search(r"!\[[^\]]+\]\(" + re.escape(image) + r"\)", markdown):
-              errors.append("O README deve incorporar o infográfico do ESCUDO.")
-          
-          try:
-              with (root / image).open("rb") as file:
-                  header = file.read(24)
-              if len(header) != 24 or header[:16] != b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR":
-                  errors.append(f"Ficheiro PNG inválido: {image}")
-              elif not all(struct.unpack(">II", header[16:24])):
-                  errors.append(f"Dimensões PNG inválidas: {image}")
-          except OSError as error:
-              errors.append(f"Não foi possível ler o infográfico: {error}")
-          
+          for doc in ("README.md", "GUIA.md"):
+              markdown = (root / doc).read_text(encoding="utf-8")
+              for target in re.findall(r"\]\(([^\s)]+)\)", markdown):
+                  url = urlsplit(target)
+                  if url.scheme or url.netloc or not url.path:
+                      continue
+                  destination = (root / unquote(url.path)).resolve()
+                  if not destination.is_relative_to(root) or not destination.exists():
+                      errors.append(f"Ligação local inválida em {doc}: {target}")
+
+          for doc, image in (
+              ("README.md", "docs/mppt24-escudo-infografico.png"),
+              ("GUIA.md", "docs/guia-visual.png"),
+          ):
+              markdown = (root / doc).read_text(encoding="utf-8")
+              if not re.search(r"!\[[^\]]+\]\(" + re.escape(image) + r"\)", markdown):
+                  errors.append(f"Falta o infográfico em {doc}: {image}")
+
+              try:
+                  with (root / image).open("rb") as file:
+                      header = file.read(24)
+                  if len(header) != 24 or header[:16] != b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR":
+                      errors.append(f"Ficheiro PNG inválido: {image}")
+                  elif not all(struct.unpack(">II", header[16:24])):
+                      errors.append(f"Dimensões PNG inválidas: {image}")
+              except OSError as error:
+                  errors.append(f"Não foi possível ler o infográfico: {error}")
+
+          catalog = json.loads((root / "docs" / "guias.json").read_text(encoding="utf-8"))
+          guide_text = (root / "GUIA.md").read_text(encoding="utf-8")
+          if catalog.get("schema_version") != 1 or not catalog.get("projects"):
+              errors.append("Versão ou lista de projetos inválida no catálogo.")
+          else:
+              seen = set()
+              for project in catalog["projects"]:
+                  repo = project["repository"]
+                  if repo in seen or not repo.startswith("mppt24/") or not project["state"]:
+                      errors.append(f"Entrada inválida no catálogo: {repo}")
+                  seen.add(repo)
+                  prefix = f"https://github.com/{repo}/blob/"
+                  if (
+                      not project["guide"].startswith(prefix)
+                      or not project["guide"].endswith("/GUIA.md")
+                      or project["guide"] not in guide_text
+                      or not project["infographic"].startswith(prefix)
+                      or not project["infographic"].endswith("/docs/guia-visual.png")
+                  ):
+                      errors.append(f"Ligações divergentes no catálogo: {repo}")
+
           if errors:
               raise SystemExit("\n".join(errors))
-          print("Ligações locais e infográfico verificados.")
+          print("Ligações locais, imagens e catálogo verificados.")
           PY

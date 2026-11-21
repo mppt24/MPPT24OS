@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "repository": "mppt24/ai-hub",
+      "state": "Em avaliação",
+      "guide": "https://github.com/mppt24/ai-hub/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/ai-hub/blob/main/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/ai-hub-publish",
+      "state": "Em avaliação",
+      "guide": "https://github.com/mppt24/ai-hub-publish/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/ai-hub-publish/blob/main/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/LOIC",
+      "state": "Proveniência do fork",
+      "guide": "https://github.com/mppt24/LOIC/blob/master/GUIA.md",
+      "infographic": "https://github.com/mppt24/LOIC/blob/master/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/mppt24",
+      "state": "Perfil público",
+      "guide": "https://github.com/mppt24/mppt24/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/mppt24/blob/main/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/mppt24-agi-absoluta",
+      "state": "Chat local validado",
+      "guide": "https://github.com/mppt24/mppt24-agi-absoluta/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/mppt24-agi-absoluta/blob/main/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/mppt24-agi-computer",
+      "state": "Conceito publicado",
+      "guide": "https://github.com/mppt24/mppt24-agi-computer/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/mppt24-agi-computer/blob/main/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/mppt24-bootstrap",
+      "state": "Em evolução",
+      "guide": "https://github.com/mppt24/mppt24-bootstrap/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/mppt24-bootstrap/blob/main/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/mppt24-core",
+      "state": "Base pública validada",
+      "guide": "https://github.com/mppt24/mppt24-core/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/mppt24-core/blob/main/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/mppt24-server-setup",
+      "state": "Em evolução",
+      "guide": "https://github.com/mppt24/mppt24-server-setup/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/mppt24-server-setup/blob/main/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/MPPT24OS",
+      "state": "Portal público",
+      "guide": "https://github.com/mppt24/MPPT24OS/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/MPPT24OS/blob/main/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/MPPT24OS-Backup-2025-08-09",
+      "state": "Arquivo de 9 de agosto de 2025",
+      "guide": "https://github.com/mppt24/MPPT24OS-Backup-2025-08-09/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/MPPT24OS-Backup-2025-08-09/blob/main/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/mpptOS",
+      "state": "Registo inicial",
+      "guide": "https://github.com/mppt24/mpptOS/blob/master/GUIA.md",
+      "infographic": "https://github.com/mppt24/mpptOS/blob/master/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/RustLinux-mppt24",
+      "state": "Maquete publicada",
+      "guide": "https://github.com/mppt24/RustLinux-mppt24/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/RustLinux-mppt24/blob/main/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/rustlinux-termux-installer",
+      "state": "Em evolução",
+      "guide": "https://github.com/mppt24/rustlinux-termux-installer/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/rustlinux-termux-installer/blob/main/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/slowloris",
+      "state": "Proveniência do fork",
+      "guide": "https://github.com/mppt24/slowloris/blob/master/GUIA.md",
+      "infographic": "https://github.com/mppt24/slowloris/blob/master/docs/guia-visual.png"
+    },
+    {
+      "repository": "mppt24/teste-ssh",
+      "state": "Repositório de teste",
+      "guide": "https://github.com/mppt24/teste-ssh/blob/main/GUIA.md",
+      "infographic": "https://github.com/mppt24/teste-ssh/blob/main/docs/guia-visual.png"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # MPPT24OS
 
+[Guia de leitura, infográfico e cuidados](GUIA.md)
+
 Ecossistema de projetos em Linux para observar sistemas, gerir serviços domésticos e experimentar IA local. **MPPT24 ESCUDO** é o servidor doméstico de segurança. **MPPT24 CORE** é o motor de observação, validação e decisão técnica.
 
 ## MPPT24 ESCUDO
