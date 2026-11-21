@@ -28,4 +28,4 @@ Abre uma [issue](https://github.com/mppt24/MPPT24OS/issues) para sugerir uma mel
 
 ## Licenças
 
-O MPPT24 CORE usa [AGPL-3.0](https://github.com/mppt24/mppt24-core/blob/main/LICENSE). Os módulos [Configuração do servidor](https://github.com/mppt24/mppt24-server-setup/blob/main/LICENSE) e [Rust no Termux](https://github.com/mppt24/rustlinux-termux-installer/blob/main/LICENSE) usam MIT. MPPT24OS e AI Hub não têm um ficheiro de licença publicado nos respetivos repositórios.
+O MPPT24OS usa [MIT](LICENSE). O MPPT24 CORE usa [AGPL-3.0](https://github.com/mppt24/mppt24-core/blob/main/LICENSE). Os módulos [Configuração do servidor](https://github.com/mppt24/mppt24-server-setup/blob/main/LICENSE) e [Rust no Termux](https://github.com/mppt24/rustlinux-termux-installer/blob/main/LICENSE) usam MIT. O AI Hub ainda não tem um ficheiro de licença publicado.
