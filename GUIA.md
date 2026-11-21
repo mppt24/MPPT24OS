@@ -4,15 +4,13 @@
 
 Índice dos projetos e apresentação do ESCUDO.
 
-[![MPPT24OS. Índice e estado dos projetos. Actions: documentação. Backup exige prova de restauro.](docs/guia-visual.png)](docs/guia-visual.png)
-
 ## Onde começar
 
-Começa pelo [índice](README.md#explorar-os-projetos) e escolhe um projeto publicado ou em evolução.
+Escolhe no [catálogo de projetos](#guias-dos-reposit%C3%B3rios-p%C3%BAblicos) ou abre os [exemplos de registos do ESCUDO](#como-ler-um-registo-do-escudo). Para ver o servidor sem instalar software, abre o [infográfico do ESCUDO](README.md#mppt24-escudo).
 
 ## Como confirmar
 
-Em **Actions**, abre «Verificar documentação». Confirma o commit e o resultado. O teste confirma as ligações locais e a imagem do ESCUDO.
+Em **Actions**, abre «Verificar documentação». Confirma o commit e o resultado. O teste confirma as ligações locais e a imagem do ESCUDO. Podes ver o resultado e abrir o detalhe de cada passo. [Ver um ensaio concluído](https://github.com/mppt24/MPPT24OS/actions/runs/44919354834)
 
 ## Como ler os registos
 
@@ -47,23 +45,33 @@ Por exemplo, «AVISO · Rede · Dados de conectividade insuficientes» pede uma 
 
 ## Guias dos repositórios públicos
 
-| Projeto | Estado | Guia |
-| --- | --- | --- |
-| AI Hub | Em avaliação | [Abrir guia](https://github.com/mppt24/ai-hub/blob/main/GUIA.md) |
-| AI Hub Publish | Em avaliação | [Abrir guia](https://github.com/mppt24/ai-hub-publish/blob/main/GUIA.md) |
-| LOIC | Proveniência do fork | [Abrir guia](https://github.com/mppt24/LOIC/blob/master/GUIA.md) |
-| MPPT24 | Perfil público | [Abrir guia](https://github.com/mppt24/mppt24/blob/main/GUIA.md) |
-| MPPT24 AGI Absoluta | Chat local validado | [Abrir guia](https://github.com/mppt24/mppt24-agi-absoluta/blob/main/GUIA.md) |
-| MPPT24 AGI Computer | Conceito publicado | [Abrir guia](https://github.com/mppt24/mppt24-agi-computer/blob/main/GUIA.md) |
-| MPPT24 Bootstrap | Em evolução | [Abrir guia](https://github.com/mppt24/mppt24-bootstrap/blob/main/GUIA.md) |
-| MPPT24 CORE | Base pública validada | [Abrir guia](https://github.com/mppt24/mppt24-core/blob/main/GUIA.md) |
-| Configuração do servidor | Em evolução | [Abrir guia](https://github.com/mppt24/mppt24-server-setup/blob/main/GUIA.md) |
-| MPPT24OS | Portal público | [Abrir guia](https://github.com/mppt24/MPPT24OS/blob/main/GUIA.md) |
-| MPPT24OS · Arquivo | Arquivo de 9 de agosto de 2025 | [Abrir guia](https://github.com/mppt24/MPPT24OS-Backup-2025-08-09/blob/main/GUIA.md) |
-| mpptOS | Registo inicial | [Abrir guia](https://github.com/mppt24/mpptOS/blob/master/GUIA.md) |
-| RustLinux MPPT24 | Maquete publicada | [Abrir guia](https://github.com/mppt24/RustLinux-mppt24/blob/main/GUIA.md) |
-| Rust no Termux | Em evolução | [Abrir guia](https://github.com/mppt24/rustlinux-termux-installer/blob/main/GUIA.md) |
-| Slowloris | Proveniência do fork | [Abrir guia](https://github.com/mppt24/slowloris/blob/master/GUIA.md) |
-| Teste SSH | Repositório de teste | [Abrir guia](https://github.com/mppt24/teste-ssh/blob/main/GUIA.md) |
+### Começar e experimentar
+
+- [MPPT24](https://github.com/mppt24/mppt24/blob/main/GUIA.md) — Escolher um percurso a partir do perfil.
+- [MPPT24OS](https://github.com/mppt24/MPPT24OS/blob/main/GUIA.md) — Índice dos projetos e explicação dos registos do ESCUDO.
+- [MPPT24 CORE](https://github.com/mppt24/mppt24-core/blob/main/GUIA.md) — Entender os relatórios e correr os testes da base validada.
+- [MPPT24 AGI Absoluta](https://github.com/mppt24/mppt24-agi-absoluta/blob/main/GUIA.md) — Experimentar o chat local, a calculadora e as conversões.
+- [AI Hub Publish](https://github.com/mppt24/ai-hub-publish/blob/main/GUIA.md) — Testar a resposta da API local. Em avaliação.
+- [AI Hub](https://github.com/mppt24/ai-hub/blob/main/GUIA.md) — Consultar o código e chegar ao guia de teste. Em avaliação.
+
+### Acompanhar o trabalho em curso
+
+- [MPPT24 Bootstrap](https://github.com/mppt24/mppt24-bootstrap/blob/main/GUIA.md) — Preparação do arranque dos componentes.
+- [Configuração do servidor](https://github.com/mppt24/mppt24-server-setup/blob/main/GUIA.md) — Esboços das rotinas de configuração e atualização.
+- [Rust no Termux](https://github.com/mppt24/rustlinux-termux-installer/blob/main/GUIA.md) — Esboços da verificação do ambiente e da instalação.
+
+### Consultar conceitos, histórico e proveniência
+
+- [MPPT24 AGI Computer](https://github.com/mppt24/mppt24-agi-computer/blob/main/GUIA.md) — Conceito publicado.
+- [RustLinux MPPT24](https://github.com/mppt24/RustLinux-mppt24/blob/main/GUIA.md) — Maquete publicada.
+- [MPPT24OS · Arquivo](https://github.com/mppt24/MPPT24OS-Backup-2025-08-09/blob/main/GUIA.md) — Cópia de 9 de agosto de 2025.
+- [mpptOS](https://github.com/mppt24/mpptOS/blob/master/GUIA.md) — Registo inicial.
+- [Teste SSH](https://github.com/mppt24/teste-ssh/blob/main/GUIA.md) — Repositório de teste.
+- [LOIC](https://github.com/mppt24/LOIC/blob/master/GUIA.md) — Histórico e proveniência do fork.
+- [Slowloris](https://github.com/mppt24/slowloris/blob/master/GUIA.md) — Histórico e proveniência do fork.
 
 O [catálogo JSON](docs/guias.json) contém as mesmas ligações num formato que outras ferramentas podem ler.
+
+## Resumo visual
+
+[![MPPT24OS. Índice e estado dos projetos. Actions: documentação. Backup exige prova de restauro.](docs/guia-visual.png)](docs/guia-visual.png)
