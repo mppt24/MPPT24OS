@@ -1,58 +1,31 @@
 # MPPT24OS
-Sistema Operativo de IA distribuído (Servidor + IAs + Clientes + Infraestrutura).  
+
+Ecossistema de projetos em Linux para observar sistemas, gerir serviços domésticos e experimentar IA local. **MPPT24 ESCUDO** é o servidor doméstico de segurança. **MPPT24 CORE** é o motor de observação, validação e decisão técnica.
 
 ## MPPT24 ESCUDO
 
-Inventário visual do software e dos serviços do servidor doméstico de segurança.
+O ESCUDO reúne proteção de rede, serviços privados, monitorização e cópias de segurança. O infográfico mostra o inventário de software e um retrato do conjunto monitorizado em **21 de novembro de 2026**.
 
 [![Infográfico do MPPT24 ESCUDO com Ubuntu Server, Arch Linux e o inventário de software](docs/mppt24-escudo-infografico.png)](docs/mppt24-escudo-infografico.png)
 
 [Ver infográfico em tamanho completo](docs/mppt24-escudo-infografico.png)
 
-Este projeto é composto por **4 repositórios principais**:
+## Explorar os projetos
 
----
+| Projeto | O que encontras | Estado |
+| --- | --- | --- |
+| [MPPT24OS](https://github.com/mppt24/MPPT24OS) | Apresentação do ecossistema e documentação pública do ESCUDO. | Portal do projeto |
+| [MPPT24 CORE](https://github.com/mppt24/mppt24-core) | Código, arquitetura, contratos e testes para observação e decisão em Linux. | Base operacional publicada. Instalação automatizada em preparação. |
+| [AI Hub](https://github.com/mppt24/ai-hub-publish) | Protótipo de uma API para conversar com modelos locais através de Ollama. | Protótipo para teste local |
+| [Configuração do servidor](https://github.com/mppt24/mppt24-server-setup) | Esboços dos scripts de configuração e atualização. | Em preparação |
+| [Rust no Termux](https://github.com/mppt24/rustlinux-termux-installer) | Esboços dos scripts de verificação e instalação. | Em preparação |
 
-## 🔹 [ai-hub-publish](https://github.com/mppt24/ai-hub-publish)
-Repositório para partilhar **prompts, respostas e ideias de IA**.  
-Estrutura:
-- `prompts/` → prompts em `.txt` ou `.md`
-- `respostas/` → respostas em `.json` ou `.txt`
-- `docs/` → documentação
+Para explorar o código, começa pelo [README do CORE](https://github.com/mppt24/mppt24-core#readme). Lá encontras os requisitos, a arquitetura e um exemplo de execução dos testes. Para conhecer o ESCUDO, começa pelo infográfico acima.
 
----
+## Contribuir
 
-## 🔹 [MPPT24OS](https://github.com/mppt24/MPPT24OS)
-Repositório principal com toda a **arquitetura do sistema**.  
-Estrutura:
-- `docs/` → Documentação  
-- `server/` → Configuração do servidor  
-- `ai/` → Modelos de IA  
-- `clients/` → Clientes (web, mobile, etc.)  
-- `infra/` → Infraestrutura  
-- `scripts/` → Automação  
+Abre uma [issue](https://github.com/mppt24/MPPT24OS/issues) para sugerir uma melhoria nesta página ou para perguntar onde colaborar. Para alterações ao código, usa o repositório do componente. Inclui o contexto necessário para reproduzir o problema e usa dados de exemplo quando a informação vier de um servidor real.
 
----
+## Licenças
 
-## 🔹 [rustlinux-termux-installer](https://github.com/mppt24/rustlinux-termux-installer)
-Instalador de **Rust no Termux**, com verificação automática.  
-Scripts incluídos:
-- `scripts/check.sh`
-- `scripts/install.sh`
-
----
-
-## 🔹 [mppt24-server-setup](https://github.com/mppt24/mppt24-server-setup)
-Scripts para **configurar e atualizar o servidor**.  
-Inclui:
-- `scripts/setup.sh`
-- `scripts/update.sh`
-
----
-
-## 🚀 Como contribuir
-1. Faça um **fork** de qualquer repositório.  
-2. Adicione melhorias.  
-3. Envie um **Pull Request**.
-
-Todos os projetos estão sob **Licença MIT**.
+O MPPT24 CORE usa [AGPL-3.0](https://github.com/mppt24/mppt24-core/blob/main/LICENSE). Os módulos [Configuração do servidor](https://github.com/mppt24/mppt24-server-setup/blob/main/LICENSE) e [Rust no Termux](https://github.com/mppt24/rustlinux-termux-installer/blob/main/LICENSE) usam MIT. MPPT24OS e AI Hub não têm um ficheiro de licença publicado nos respetivos repositórios.

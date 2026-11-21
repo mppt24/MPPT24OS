@@ -1,25 +1,59 @@
-name: CI
+name: Verificar documentação
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
-  build:
+  documentacao:
+    name: Ligações e infográfico
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
         with:
-          node-version: '18'
-      - name: Setup Rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-      - name: Instalar dependências
-        run: echo "Instalar dependências aqui"
-      - name: Executar build
-        run: echo "Executar build aqui"
+          persist-credentials: false
+      - name: Validar o README e o PNG
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          import struct
+          from urllib.parse import unquote, urlsplit
+          
+          root = Path.cwd().resolve()
+          readme = root / "README.md"
+          errors = []
+          
+          for target in re.findall(r"\]\(([^\s)]+)\)", readme.read_text(encoding="utf-8")):
+              url = urlsplit(target)
+              if url.scheme or url.netloc or not url.path:
+                  continue
+              destination = (readme.parent / unquote(url.path)).resolve()
+              if not destination.is_relative_to(root) or not destination.exists():
+                  errors.append(f"Ligação local inválida no README: {target}")
+          
+          image = "docs/mppt24-escudo-infografico.png"
+          markdown = readme.read_text(encoding="utf-8")
+          if not re.search(r"!\[[^\]]+\]\(" + re.escape(image) + r"\)", markdown):
+              errors.append("O README deve incorporar o infográfico do ESCUDO.")
+          
+          try:
+              with (root / image).open("rb") as file:
+                  header = file.read(24)
+              if len(header) != 24 or header[:16] != b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR":
+                  errors.append(f"Ficheiro PNG inválido: {image}")
+              elif not all(struct.unpack(">II", header[16:24])):
+                  errors.append(f"Dimensões PNG inválidas: {image}")
+          except OSError as error:
+              errors.append(f"Não foi possível ler o infográfico: {error}")
+          
+          if errors:
+              raise SystemExit("\n".join(errors))
+          print("Ligações locais e infográfico verificados.")
+          PY
