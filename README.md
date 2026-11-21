@@ -1,6 +1,14 @@
 # MPPT24OS
 Sistema Operativo de IA distribuído (Servidor + IAs + Clientes + Infraestrutura).  
 
+## MPPT24 ESCUDO
+
+Inventário visual do software e dos serviços do servidor doméstico de segurança.
+
+[![Infográfico do MPPT24 ESCUDO com Ubuntu Server, Arch Linux e o inventário de software](docs/mppt24-escudo-infografico.png)](docs/mppt24-escudo-infografico.png)
+
+[Ver infográfico em tamanho completo](docs/mppt24-escudo-infografico.png)
+
 Este projeto é composto por **4 repositórios principais**:
 
 ---
