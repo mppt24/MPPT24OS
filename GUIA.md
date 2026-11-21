@@ -4,13 +4,15 @@
 
 Índice dos projetos e apresentação do ESCUDO.
 
+[Ver os 16 guias públicos](#guias-dos-reposit%C3%B3rios-p%C3%BAblicos) · [Ler o inventário do ESCUDO em texto](README.md#software-do-escudo-em-texto)
+
 ## Onde começar
 
 Escolhe no [catálogo de projetos](#guias-dos-reposit%C3%B3rios-p%C3%BAblicos) ou abre os [exemplos de registos do ESCUDO](#como-ler-um-registo-do-escudo). Para ver o servidor sem instalar software, abre o [infográfico do ESCUDO](README.md#mppt24-escudo).
 
 ## Como confirmar
 
-Em **Actions**, abre «Verificar documentação». Confirma o commit e o resultado. O teste confirma as ligações locais e a imagem do ESCUDO. Podes ver o resultado e abrir o detalhe de cada passo. [Ver um ensaio concluído](https://github.com/mppt24/MPPT24OS/actions/runs/44919354834)
+O GitHub regista cada execução dos testes em **Actions**. Abre a execução «Verificar documentação», confirma a data e a versão junto de *Commit*, e abre a etapa que queres ver. Nas execuções concluídas, *Success* indica que todas as etapas obrigatórias passaram. [Ver um ensaio concluído](https://github.com/mppt24/MPPT24OS/actions/runs/44920015000)
 
 ## Como ler os registos
 
@@ -41,7 +43,9 @@ Os exemplos abaixo são fictícios. No servidor, confirma sempre a hora, a orige
 | Cópias e recuperação | Resultado da cópia e teste de restauro | Uma cópia concluída e um restauro verificado são provas diferentes. |
 | Monitorização e CORE | Estado e dado que o justificou | `OK` indica que a verificação passou. `WARNING` merece atenção. `ERROR` indica falha na verificação. `UNKNOWN` indica dados insuficientes. |
 
-Por exemplo, «AVISO · Rede · Dados de conectividade insuficientes» pede uma verificação da recolha antes de concluir que a rede falhou.
+- **«AVISO · Rede · Dados de conectividade insuficientes».** Confirma se a recolha produziu dados na hora do aviso. Só então dá para avaliar a ligação.
+- **«OK · Cópia concluída».** Confirma que a ferramenta terminou a cópia. Procura um registo separado de restauro para saber o que foi recuperado.
+- **«ERRO · Serviço · Arranque falhou».** Confirma a hora e o serviço. Procura a primeira mensagem de erro dessa execução para perceber onde falhou.
 
 ## Guias dos repositórios públicos
 
