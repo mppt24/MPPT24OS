@@ -76,6 +76,13 @@ Os exemplos abaixo são fictícios. No servidor, confirma sempre a hora, a orige
 
 O [catálogo JSON](docs/guias.json) contém as mesmas ligações num formato que outras ferramentas podem ler.
 
+## Materiais antigos
+
+- A pasta `mpptOS/` guarda o apontamento inicial. Para entender a sequência do projeto, consulta o [guia histórico do mpptOS](https://github.com/mppt24/mpptOS/blob/master/GUIA.md).
+- A pasta `teste-ssh/` guarda uma nota de teste. Para perceber a sua finalidade, consulta o [guia do teste SSH](https://github.com/mppt24/teste-ssh/blob/main/GUIA.md).
+- A pasta `Transferências/` guarda uma cópia da apresentação do AGI Computer e uma versão simulada do RustLinux. As páginas atuais explicam o que se consegue ver ou experimentar. [Conceito AGI Computer](https://github.com/mppt24/mppt24-agi-computer) · [Maquete RustLinux](https://github.com/mppt24/RustLinux-mppt24)
+- A pasta `trabalhos-do-chatgpt/` contém só um apontamento. Para encontrar os trabalhos publicados e os seus guias, volta ao [catálogo da página](#guias-dos-reposit%C3%B3rios-p%C3%BAblicos).
+
 ## Resumo visual
 
 [![MPPT24OS. Índice e estado dos projetos. Actions: documentação. Backup exige prova de restauro.](docs/guia-visual.png)](docs/guia-visual.png)

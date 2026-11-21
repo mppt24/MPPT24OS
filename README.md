@@ -49,6 +49,10 @@ O ESCUDO reúne proteção de rede, serviços privados, monitorização e cópia
 
 O inventário lista os componentes documentados. O estado da imagem refere-se ao conjunto monitorizado nessa data. A cópia de 15 de novembro estava concluída e foram restaurados três ficheiros. O restauro integral ainda estava por validar.
 
+## Materiais antigos neste repositório
+
+As pastas antigas guardam apontamentos, cópias de apresentações e uma maquete. Se chegaste pelo separador **Code** e abriste uma dessas pastas, o guia indica o projeto atual correspondente. [Encontrar o projeto atual a partir de uma pasta antiga](GUIA.md#materiais-antigos)
+
 ## Contribuir
 
 Para uma dúvida, sugestão ou erro público, abre um tópico no repositório do componente. Se a dúvida for sobre este índice, usa os [tópicos do MPPT24OS](https://github.com/mppt24/MPPT24OS/issues).
